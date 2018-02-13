@@ -1,0 +1,15 @@
+<h3>***List of all People***</h3>
+<ol>
+  <% i = 0 %>
+<% @list_people.each do |pers| %>
+	<li>
+    ......
+		<strong><%= pers.name %></strong>
+    Birthday:<%= pers.dob %>
+    Gender:<%= pers.gender %>
+    <% temp_zip=pers.zipcode.to_s %>
+    Zipcode:<%= '0'*(5-temp_zip.length)+temp_zip %>
+	</li>
+<% end %>
+</ol>
+<a href="/person/new">*Click here to go back and add a new person*</a>
