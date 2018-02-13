@@ -13,7 +13,7 @@ end
 
 get '/people' do
 	@list_people= Person.all
-	erb :person
+	erb :people
 end
 
 get '/person/new' do
@@ -22,7 +22,7 @@ end
 
 get '/events' do
 	@list_events= Event.all
-	erb :event
+	erb :events
 end
 
 get '/event/new' do
@@ -31,7 +31,7 @@ end
 
 get '/registrations' do
 	@list_registrations= Registration.all
-	erb :registration
+	erb :registrations
 end
 
 get '/registration/new' do
